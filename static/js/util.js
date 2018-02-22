@@ -39,18 +39,20 @@ let util = {
     },
 
     getTable: function(results) {
-    let table = "";
-    $.each( results, function( index, row){
-          table += "<tr><td>" + row.name;
-          table += "</td><td>" + util.convertKmToLocale(row.diameter);
-          table += "</td><td>" + row.climate;
-          table += "</td><td>" + row.terrain;
-          table += "</td><td>" + util.convertWaterPercentage(row.surface_water);
-          table += "</td><td>"  + util.convertPeopleToLocale(row.population);
-          table += "</td><td>" + util.convertResidents(row.residents.length, row.url);
-          table += "</td><td>" + " " + "</td></tr>";
-        });
-    return table;
+        let table = "";
+        $.each( results, function( index, row){
+              table += "<tr><td>" + row.name;
+              table += "</td><td>" + util.convertKmToLocale(row.diameter);
+              table += "</td><td>" + row.climate;
+              table += "</td><td>" + row.terrain;
+              table += "</td><td>" + util.convertWaterPercentage(row.surface_water);
+              table += "</td><td>"  + util.convertPeopleToLocale(row.population);
+              table += "</td><td>" + util.convertResidents(row.residents.length, row.url);
+              table += "</td><td>" + " " + "</td></tr>";
+            });
+        return table;
     }
+
+
 };
 
