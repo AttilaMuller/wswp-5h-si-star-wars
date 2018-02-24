@@ -8,9 +8,6 @@ let dom = {
 
     },
 
-    ///ShowResidentsTable: function(residents){
-     ////// },
-
     animateShip: function (){
         $("#ship").animate({right: "+=500", top: "-=200"}, 300);
         $("#ship").animate({right: "+=2000", top: "+=600"}, 450);

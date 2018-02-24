@@ -3,3 +3,7 @@
     padding-right: 50px;
     padding-top: 20px;
 }
+
+.form input {
+    width: 300px;
+}

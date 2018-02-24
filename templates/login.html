@@ -1,0 +1,18 @@
+{% include 'navbar.html' %}
+<div class="login-page container-fluid">
+  <div class="form">
+        </form>
+        <form action="/login" method="POST" class="login-form">
+        <legend>Login</legend>
+            {% if wrong_data_help == None %}
+                    <p><input class="form-control" name="username" type="text" placeholder="wrong username or password"/></p>
+                    <p><input class="form-control" name="password" type="password" /></p>
+                    <p><button class="btn btn-primary">Login</button></p>
+            {% else %}
+                  <p><input class="form-control" name="username" type="text" placeholder="username"/></p>
+                  <p><input class="form-control" name="password" type="password" placeholder="password"/></p>
+                  <p><button class="btn btn-primary">Login</button></p>
+            {% endif %}
+        </form>
+  </div>
+</div>

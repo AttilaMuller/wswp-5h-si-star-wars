@@ -1,6 +1,16 @@
 
 // load table
-$( '#planets_table' ).hide();
+
+$( document ).ready(function() {
+    $( '#planets_table' ).hide();
+    //$.get("/session", function(data){
+     //   if(data!=null){
+    //        $('#signed-in').html( "Signed in as " + data );
+  // }
+
+//});
+});
+
 
 $.getJSON('https://swapi.co/api/planets/?page=1', function(data){
     dom.animateShip();
@@ -48,4 +58,6 @@ $( '#button_previous' ).click(function() {
       } else {
         alert("Reached minimum page number")
     }
+
 });
+

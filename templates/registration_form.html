@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'navbar.html' %}
+<body>
+    <div class="form container-fluid">
+        <form method="post">
+        <fieldset id="fieldset">
+            <legend>Please fill the registration form</legend>
+            <p><label for="user_name">User name</label><br></p>
+            <input class="form-control" id="user_name" name="user_name" placeholder="User name" required ><br>
+            <p></p>
+            <p><label for="password">Password</label><br></p>
+            <input class="form-control" id="password" name="password" type="password" placeholder="Password" required><br>
+            <p></p>
+            <p><label for="verify_password">Verify Password</label><br></p>
+            <input class="form-control" id="verify_password" name="verify_password" type="password" placeholder="Verify Password" required><br>
+            <p></p>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
