@@ -1,1 +1,1 @@
-web: gunicorn main.py:swapi-app-yo
+web: gunicorn main.py:app
